@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodSwap – Tu celular con personalidad propia</title>
+  <style>
+    :root {
+      --lavanda: #CDB4DB;
+      --celeste: #A2D2FF;
+      --rosa: #FFC8DD;
+      --fondo: #F8F9FA;
+      --enojo: #E63946;
+      --romantico: #FF4D6D;
+      --cool: #1D3557;
+      --payaso: #FFD60A;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--fondo);
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, var(--lavanda), var(--celeste));
+      color: #fff;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .btn-primary {
+      margin-top: 1rem;
+      background: var(--rosa);
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 1.5rem;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 3rem 1rem;
+    }
+
+    .moods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .mood-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .mood-card h3 {
+      margin: 0.5rem 0;
+    }
+
+    .enojo { border-top: 6px solid var(--enojo); }
+    .romantico { border-top: 6px solid var(--romantico); }
+    .cool { border-top: 6px solid var(--cool); }
+    .payaso { border-top: 6px solid var(--payaso); }
+
+    footer {
+      background: var(--lavanda);
+      color: #fff;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MoodSwap</h1>
+    <p>Tu celular, con personalidad propia 🎭</p>
+    <button class="btn-primary">Prueba tu mood favorito</button>
+  </header>
+
+  <section>
+    <h2>¿Cómo funciona?</h2>
+    <p>Solo elige una personalidad, y tu celular cambia vibraciones, notificaciones y estilo para reflejar esa emoción.</p>
+  </section>
+
+  <section>
+    <h2>Moods disponibles</h2>
+    <div class="moods">
+      <div class="mood-card enojo">
+        <h3>😡 Enojado</h3>
+        <p>Vibraciones fuertes + notificaciones urgentes:<br>“¡Tienes un mensaje, revísalo YA!”</p>
+      </div>
+      <div class="mood-card romantico">
+        <h3>😍 Romántico</h3>
+        <p>Vibración suave + frases tiernas:<br>“Te llegó un mensaje 💌, seguro alguien pensó en ti…”</p>
+      </div>
+      <div class="mood-card cool">
+        <h3>😎 Cool</h3>
+        <p>Notificaciones relajadas:<br>“Tranqui, llegó algo… lo ves cuando quieras 🤙”</p>
+      </div>
+      <div class="mood-card payaso">
+        <h3>🤪 Payaso</h3>
+        <p>Vibraciones locas + humor:<br>“JAJA, apúrate o me pongo a gritar!”</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Beneficios</h2>
+    <p>🎭 Personalización única · 🔔 Notificaciones interactivas · 🤯 Experiencia divertida</p>
+  </section>
+
+  <footer>
+    <p>© 2025 MoodSwap – Proyecto ficticio para landing demo</p>
+  </footer>
+
+</body>
+</html>
